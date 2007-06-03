@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ExamRecordDataSet" targetNamespace="http://tempuri.org/ExamRecordDataSet.xsd" xmlns:mstns="http://tempuri.org/ExamRecordDataSet.xsd" xmlns="http://tempuri.org/ExamRecordDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ExamRecordDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ExamRecordDataSet" msprop:Generator_DataSetName="ExamRecordDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ExamRecord" msprop:Generator_UserTableName="ExamRecord" msprop:Generator_RowDeletedName="ExamRecordRowDeleted" msprop:Generator_TableClassName="ExamRecordDataTable" msprop:Generator_RowChangedName="ExamRecordRowChanged" msprop:Generator_RowClassName="ExamRecordRow" msprop:Generator_RowChangingName="ExamRecordRowChanging" msprop:Generator_RowEvArgName="ExamRecordRowChangeEvent" msprop:Generator_RowEvHandlerName="ExamRecordRowChangeEventHandler" msprop:Generator_TablePropName="ExamRecord" msprop:Generator_TableVarName="tableExamRecord" msprop:Generator_RowDeletingName="ExamRecordRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RollNo" msprop:Generator_UserColumnName="RollNo" msprop:Generator_ColumnPropNameInRow="RollNo" msprop:Generator_ColumnVarNameInTable="columnRollNo" msprop:Generator_ColumnPropNameInTable="RollNoColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="StudentId" msprop:Generator_UserColumnName="StudentId" msprop:Generator_ColumnPropNameInRow="StudentId" msprop:Generator_ColumnVarNameInTable="columnStudentId" msprop:Generator_ColumnPropNameInTable="StudentIdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="StudenName" msprop:Generator_UserColumnName="StudenName" msprop:Generator_ColumnPropNameInRow="StudenName" msprop:Generator_ColumnVarNameInTable="columnStudenName" msprop:Generator_ColumnPropNameInTable="StudenNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SectionsAttended" msprop:Generator_UserColumnName="SectionsAttended" msprop:Generator_ColumnPropNameInRow="SectionsAttended" msprop:Generator_ColumnVarNameInTable="columnSectionsAttended" msprop:Generator_ColumnPropNameInTable="SectionsAttendedColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QuestionsAttended" msprop:Generator_UserColumnName="QuestionsAttended" msprop:Generator_ColumnPropNameInRow="QuestionsAttended" msprop:Generator_ColumnVarNameInTable="columnQuestionsAttended" msprop:Generator_ColumnPropNameInTable="QuestionsAttendedColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CorrectAnswer" msprop:Generator_UserColumnName="CorrectAnswer" msprop:Generator_ColumnPropNameInRow="CorrectAnswer" msprop:Generator_ColumnVarNameInTable="columnCorrectAnswer" msprop:Generator_ColumnPropNameInTable="CorrectAnswerColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="WrongAnswers" msprop:Generator_UserColumnName="WrongAnswers" msprop:Generator_ColumnPropNameInRow="WrongAnswers" msprop:Generator_ColumnVarNameInTable="columnWrongAnswers" msprop:Generator_ColumnPropNameInTable="WrongAnswersColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="HitRate" msprop:Generator_UserColumnName="HitRate" msprop:Generator_ColumnPropNameInRow="HitRate" msprop:Generator_ColumnVarNameInTable="columnHitRate" msprop:Generator_ColumnPropNameInTable="HitRateColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalMarks" msprop:Generator_UserColumnName="TotalMarks" msprop:Generator_ColumnPropNameInRow="TotalMarks" msprop:Generator_ColumnVarNameInTable="columnTotalMarks" msprop:Generator_ColumnPropNameInTable="TotalMarksColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="StartingTime" msprop:Generator_UserColumnName="StartingTime" msprop:Generator_ColumnPropNameInRow="StartingTime" msprop:Generator_ColumnVarNameInTable="columnStartingTime" msprop:Generator_ColumnPropNameInTable="StartingTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EndingTime" msprop:Generator_UserColumnName="EndingTime" msprop:Generator_ColumnPropNameInRow="EndingTime" msprop:Generator_ColumnVarNameInTable="columnEndingTime" msprop:Generator_ColumnPropNameInTable="EndingTimeColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

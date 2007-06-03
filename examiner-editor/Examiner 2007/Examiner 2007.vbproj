@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0617C000-86AB-4D33-902F-3E1DDD49B43C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Examiner_2007.My.MyApplication</StartupObject>
+    <RootNamespace>Examiner_2007</RootNamespace>
+    <AssemblyName>Examiner 2007</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>eXaminer.ico</ApplicationIcon>
+    <OptionCompare>Text</OptionCompare>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <ExcludedPermissions>
+    </ExcludedPermissions>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CofigRW, Version=1.5.29.2050, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Files\CofigRW.dll</HintPath>
+    </Reference>
+    <Reference Include="DLoder, Version=1.5.28.1055, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Files\DLoder.dll</HintPath>
+    </Reference>
+    <Reference Include="Encoder, Version=1.4.29.7, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Files\Encoder.dll</HintPath>
+    </Reference>
+    <Reference Include="NetConfInf, Version=1.5.29.1017, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Files\Client (LDP)\NetConfInf.dll</HintPath>
+    </Reference>
+    <Reference Include="ReDataProV, Version=1.6.11.835, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Files\Client (LDP)\ReDataProV.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XControls, Version=1.3.25.7, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Files\XControls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Forms\About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Configure.Designer.vb">
+      <DependentUpon>Configure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Configure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examination.vb" />
+    <Compile Include="Forms\examiner.Designer.vb">
+      <DependentUpon>examiner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\examiner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoadFromFile.Designer.vb">
+      <DependentUpon>LoadFromFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoadFromFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StartSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StartSelect.Designer.vb">
+      <DependentUpon>StartSelect.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Forms\Terminate.Designer.vb">
+      <DependentUpon>Terminate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Terminate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\About.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Configure.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Configure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\examiner.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>examiner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoadFromFile.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoadFromFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashScreen.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StartSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StartSelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Terminate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Terminate.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartExam 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Config 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoadExam 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoadExam 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartExam 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartExam 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartExam 31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Config 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoadExam 31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Config 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eXaminerSplashScreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExaminerAbout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cln34.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x 1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1024 x 11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Examiner 2007.ico" />
+    <Content Include="eXaminer.ico" />
+    <Content Include="Examiner2007.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <BaseApplicationManifest Include="My Project\app.manifest" />
+    <None Include="app.config" />
+    <None Include="Resources\IntroType1or2.bmp" />
+    <None Include="Resources\Untitled-2.gif" />
+    <None Include="Resources\Edit Users.png" />
+    <None Include="Resources\anim_wait.gif" />
+    <None Include="Resources\confi.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
